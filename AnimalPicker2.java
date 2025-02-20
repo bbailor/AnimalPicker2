@@ -19,9 +19,5 @@ public class AnimalPicker2
         {
             System.out.println("DISPLAY DOG ASCII HERE.");
         }
-        else 
-        {
-            System.out.println("Please enter either \"CAT\" or \"DOG\".");
-        }
     }
 }
