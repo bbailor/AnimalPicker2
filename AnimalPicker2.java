@@ -9,19 +9,27 @@ public class AnimalPicker2
 
         System.out.println("Type \"CAT\" to display a cat or \"DOG\" to display a dog." );
 
-        String catOrDog = input.nextLine();
+        boolean valid = false;
 
-        if (catOrDog.equalsIgnoreCase("CAT"))
+        while (!valid)
         {
-            System.out.println("DISPLAY CAT ASCII HERE.");
-        }
-        else if (catOrDog.equalsIgnoreCase("DOG"))
-        {
-            System.out.println("DISPLAY DOG ASCII HERE.");
-        }
-        else
-        {
-            System.out.println("Error: Invalid Entry.");
+            String catOrDog = input.nextLine();
+
+            if (catOrDog.equalsIgnoreCase("CAT"))
+            {
+                System.out.println("DISPLAY CAT ASCII HERE.");
+                valid = true;
+            }
+            else if (catOrDog.equalsIgnoreCase("DOG"))
+            {
+                System.out.println("DISPLAY DOG ASCII HERE.");
+                valid = true;
+            }
+            else
+            {
+                System.out.println("Error: Invalid Entry.\nNew Entry: ");
+                valid = false;
+            }
         }
     }
 }
