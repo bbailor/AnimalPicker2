@@ -7,22 +7,27 @@ public class AnimalPicker2
     {
         Scanner input = new Scanner(System.in);
 
-        System.out.println("Type \"CAT\" to display a cat or \"DOG\" to display a dog." );
+        System.out.println("Type \"CAT\" to display a cat, \"DOG\" to display a dog, or \"FISH\" to display a fish." );
 
         boolean valid = false;
 
         while (!valid)
         {
-            String catOrDog = input.nextLine();
+            String animal = input.nextLine();
 
-            if (catOrDog.equalsIgnoreCase("CAT"))
+            if (animal.equalsIgnoreCase("CAT"))
             {
                 System.out.println("|\\---/|\n| o_o |\n \\_^_/\n");
                 valid = true;
             }
-            else if (catOrDog.equalsIgnoreCase("DOG"))
+            else if (animal.equalsIgnoreCase("DOG"))
             {
                 System.out.println(",-.___,-.\n\\_/_ _\\_/\n  )O_O(\n { (_) }\n  `-^-\'  ");
+                valid = true;
+            }
+            else if (animal.equalsIgnoreCase("FISH"))
+            {
+                System.out.println("|\\   \\\\\\\\__     o\n| \\_/    o \\    o \n> _   (( <_  oo  \n| / \\__+___/      \n|/     |/");
                 valid = true;
             }
             else
