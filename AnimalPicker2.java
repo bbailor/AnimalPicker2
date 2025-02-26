@@ -28,6 +28,7 @@ public class AnimalPicker2
             else if (animal.equalsIgnoreCase("FISH"))
             {
                 System.out.println("|\\   \\\\\\\\__     o\n| \\_/    o \\    o \n> _   (( <_  oo  \n| / \\__+___/      \n|/     |/");
+                System.out.println("\n    ><((((°> \n    <°))))>< \n");
                 valid = true;
             }
             else
