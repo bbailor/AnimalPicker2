@@ -19,5 +19,9 @@ public class AnimalPicker2
         {
             System.out.println("DISPLAY DOG ASCII HERE.");
         }
+        else
+        {
+            System.out.println("Error: Invalid Entry.");
+        }
     }
 }
