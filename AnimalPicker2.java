@@ -17,12 +17,12 @@ public class AnimalPicker2
 
             if (catOrDog.equalsIgnoreCase("CAT"))
             {
-                System.out.println("DISPLAY CAT ASCII HERE.");
+                System.out.println("|\\---/|\n| o_o |\n \\_^_/\n");
                 valid = true;
             }
             else if (catOrDog.equalsIgnoreCase("DOG"))
             {
-                System.out.println("DISPLAY DOG ASCII HERE.");
+                System.out.println(",-.___,-.\n\\_/_ _\\_/\n  )O_O(\n { (_) }\n  `-^-\'  ");
                 valid = true;
             }
             else
